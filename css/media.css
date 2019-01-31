@@ -1,5 +1,5 @@
 @media (max-width: 940px) and (min-width: 320px){
-	.menu_list-items{
+	.menu_list-items-link{
 		font-size: 26px;
 	}
 	.telephone_list-items-number{
@@ -53,7 +53,7 @@
 }
 
 @media (max-width: 1280px) and (min-width: 940px){
-	.menu_list-items{
+	.menu_list-items-link{
 		font-size: 26px;
 		padding-left: 11px;
 	}
@@ -67,23 +67,25 @@
 	.about_dev-text{
 		padding-left: 8%;
 	}
+	.service_list-items img{
+		width: 25%;
+	}
 	.service_list-items{	
 		width: 40%;	
-		font-size: 	24px;
+		font-size: 	33px;
 	}
 	.service__button-cost{
 		font-size: 	18px;
 	}
 
-
 	.examples_list-items{
-		display: inline-block;	
+		display: block;
 	}
 	.examples_list-items img{
 		width: 50%;	
 	}
 	.examples_list-items__desk{
-		font-size: 	22px;
+		font-size: 	30px;
 	}
 	.examples__button-order{
 		font-size: 	18px;

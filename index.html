@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=1000">
 	<title>NeobisFirst</title>
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/style.css">
@@ -12,12 +13,25 @@
 	<div class="wrapper">
 		<header class="header">
 
+		<!-- <div class="burger-menu">
+			<a href="#" class="burger-menu__button">
+				<span class="burger-menu__lines"></span>
+			</a>
+
+			<nav class="burger-menu__nav">
+				<a href="#section-1" class="burger-menu__link">Услуги</a>
+				<a href="#section-2" class="burger-menu__link">Портфолио</a>
+				<a href="#section-3" class="burger-menu__link">Стоимость</a>
+			</nav>
+
+			<div class="burger-menu__overlay"></div>
+		</div> -->
 
 		<menu class="menu">
 			<ul class="menu_list">
-				<li class="menu_list-items">Услуги</li>
-				<li class="menu_list-items">Портфолио</li>
-				<li class="menu_list-items">Стоимость</li>
+				<li class="menu_list-items"><a href="#" class="menu_list-items-link">Услуги</a></li>
+				<li class="menu_list-items"><a href="#" class="menu_list-items-link">Портфолио</a></li>
+				<li class="menu_list-items"><a href="#" class="menu_list-items-link">Стоимость</a></li>
 			</ul>
 		</menu>
 		<div class="telephone">
@@ -43,7 +57,7 @@
 		</section>
 
 		<section class="service">
-			<h1 class="service__caption">Что я делаю</h1>
+			<h1 id="section-1" class="service__caption">Что я делаю</h1>
 			<ul class="service_list">
 				<li class="service_list-items">
 					<img src="img/icons/coding (1).png" alt="">
@@ -69,7 +83,7 @@
 
 
 		<section class="examples">
-			<h1 class="examples__caption">Примеры моих работ</h1>
+			<h1 id="section-2" class="examples__caption">Примеры моих работ</h1>
 			<ul class="examples_list">
 				<li class="examples_list-items">
 					<img src="img/Portfolio_1.png" alt="">
@@ -92,7 +106,7 @@
 	</div>
 		
 		<section class="cost">
-			<h1 class="cost__caption">Адаптивная вёрстка под все устройства<br> и браузеры от 1000 рублей  всего за 4 часа.*</h1>
+			<h1 id="section-3" class="cost__caption">Адаптивная вёрстка под все устройства<br> и браузеры от 1000 рублей  всего за 4 часа.*</h1>
 			<p class="cost__desk">* Срок стоимости могут отличаться от заявленных и рассчитываются индивидуально,<br> в зависимости от сложности задач</p>
 		</section>
 
@@ -127,5 +141,40 @@
 		<section class="rights">
 			<p class="rights__desk">© Дмитрий Алексеев, 2016 - 2018</p>
 		</section>
+
+
+		<!-- <script
+  src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+  	<script>
+  		
+  		 $(document).ready(function burgerMenu(selector) {
+  			let menu = $(selector);
+  			let button = menu.find('.burger-menu__button');
+  			let links = menu.find('.burger-menu__link');
+  			let overlay = menu.find('.burger-menu__overlay');
+
+  			button.on('click', (e) => {
+  				e.preventDefault();
+  				toggleMenu();
+  			});
+
+  			links.on('click', () => toggleMenu());
+  			overlay.on('click' () => toggleMenu());
+
+  			function toggleMenu() {
+  				menu.toggleClass('burger-menu_active');
+
+  				if (menu.hasClass('burger-menu_active')) {
+  					$('body').css('overflow', 'hidden');
+  				} else {
+  					$('body').css('overflow', 'visible');
+  				}
+  			}
+  		});
+
+  		burgerMenu('.burger-menu');
+  	</script> -->
 </body>
 </html>
